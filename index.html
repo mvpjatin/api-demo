@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Dog Images</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Dog Images</h1>
+        <p>This page demonstrates how to connect with the Dog CEO API to fetch random images of various dog breeds. The API provides a list of dog breeds, and you can select a breed from the dropdown below to see a random image of that breed.</p>
+        <p>The list of breeds is retrieved from the <a href="https://dog.ceo/api/breeds/list/all" target="_blank" rel="noopener noreferrer">Dog CEO API</a>, which provides a comprehensive collection of dog breeds and sub-breeds. When you select a breed from the dropdown and click the "Fetch Random Dog Image" button, an API request is made to fetch a random image of the selected breed.</p>
+        <label for="breedSelect">Select a dog breed:</label>
+        <select id="breedSelect"></select>
+        <button id="fetchButton">Fetch Random Dog Image</button>
+        <div class="image-container">
+            <img id="dogImage" src="" alt="Random Dog Image">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
